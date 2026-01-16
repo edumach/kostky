@@ -5,13 +5,13 @@ Obsahem cvičení je pomocí klonování repozitáře z GitHubu "stáhnout" kost
 
 ## Příprava
 
-1. Přihlas se **v terminálu** na server TuX a přesuň se do adresáře `~/www`.
+1. Přihlas se **v terminálu** na server TuX.
 2. Zapiš si v Gitu své údaje:
    ```
    $ git config --global user.name "Jméno Příjmení"
    $ git config --global user.email "10XPrijmeniJ@student.panska.cz"
    ``` 
-3. Gitem naklonuj repozitář `https://github.com/edumach/kostky`:
+3. Přesuň se do adresáře `~/www` a naklonuj repozitář `https://github.com/edumach/kostky`:
    ```
    $ cd ~/www
    $ git clone https://github.com/edumach/kostky
