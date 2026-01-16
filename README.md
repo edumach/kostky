@@ -3,7 +3,7 @@ Obsahem cvičení je pomocí klonování repozitáře z GitHubu "stáhnout" kost
 
 ## Příprava
 
-1. Přihlas se *v terminálu** na server TuX a přesuň se do adresáře `~/www`.
+1. Přihlas se **v terminálu** na server TuX a přesuň se do adresáře `~/www`.
 2. Gitem naklonuj repozitář `https://github.com/edumach/kostky`:
    ```
    $ cd ~/www
