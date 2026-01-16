@@ -8,8 +8,8 @@ Obsahem cvičení je pomocí klonování repozitáře z GitHubu "stáhnout" kost
 1. Přihlas se **v terminálu** na server TuX a přesuň se do adresáře `~/www`.
 2. Zapiš si v Gitu své údaje:
    ```
-   $ git config -- global user.name "Jméno Příjmení"
-   $ git config -- global user.email "10XPrijmeniJ@student.panska.cz"
+   $ git config --global user.name "Jméno Příjmení"
+   $ git config --global user.email "10XPrijmeniJ@student.panska.cz"
    ``` 
 3. Gitem naklonuj repozitář `https://github.com/edumach/kostky`:
    ```
