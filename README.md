@@ -127,7 +127,8 @@ Pod předchozí odstavec přidej:
 
 **Vysvětlení:**
 
-* vznikne např. `img/k_4.png`
+* v proměnné `$kostka1` je uložené pouze číslo
+* vznikne např. `<img src='img/k_4.gif'>`
 
 ---
 
