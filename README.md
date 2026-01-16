@@ -81,11 +81,9 @@ A **doplň PHP výpisy**:
 
 ```html
 <p>
-    Na 1. kostce padlo číslo
-    <strong><?php echo $kostka1; ?></strong><br> 
+    Na 1. kostce padlo číslo <?php echo $kostka1; ?> <br> 
 
-    Na 2. kostce padlo číslo
-    <strong><?php echo $kostka2; ?></strong>
+    Na 2. kostce padlo číslo <?php echo $kostka2; ?>
 </p>
 ```
 
