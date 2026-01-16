@@ -119,8 +119,8 @@ Pod předchozí odstavec přidej:
 
 ```php
 <p>
-  <img src="img/<?php echo $kostka1; ?>.png" alt="Kostka 1">
-  <img src="img/<?php echo $kostka2; ?>.png" alt="Kostka 2">
+  <img src="img/k_" . <?php echo $kostka1; ?> . ".png" alt="Kostka 1">
+  <img src="img/k_" . <?php echo $kostka2; ?> . ".png" alt="Kostka 2">
 </p>
 ```
 
