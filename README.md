@@ -40,7 +40,7 @@ PHP kód se zapisuje mezi značky:
 
 ```php
 <?php
-    // PHP kód
+  // PHP kód
 ?>
 ```
 
@@ -78,8 +78,9 @@ Najdi v HTML tuto část:
 
 ```php
 <p>
-    Na 1. kostce padlo číslo <br> 
-    Na 2. kostce padlo číslo
+  Na 1. kostce padlo číslo
+  <br>
+  Na 2. kostce padlo číslo
 </p>
 ```
 
@@ -87,9 +88,9 @@ A **doplň PHP výpisy**:
 
 ```php
 <p>
-    Na 1. kostce padlo číslo <?php echo $kostka1; ?> <br> 
-
-    Na 2. kostce padlo číslo <?php echo $kostka2; ?>
+  Na 1. kostce padlo číslo <?php echo $kostka1; ?>
+  <br>
+  Na 2. kostce padlo číslo <?php echo $kostka2; ?>
 </p>
 ```
 
