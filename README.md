@@ -113,15 +113,15 @@ Obrázky jsou ve složce:
 a mají názvy:
 
 ```
-k_1.png, k_2.png, k_3.png, k_4.png, k_5.png, k_6.png
+k_1.gif, k_2.gif ... k_6.gif
 ```
 
 Pod předchozí odstavec přidej:
 
 ```php
 <p>
-  echo "<img src='img/k_$kostka1.png'>";
-  echo "<img src='img/k_$kostka1.png'>";
+  echo "<img src='img/k_$kostka1.gif'>";
+  echo "<img src='img/k_$kostka1.gif'>";
 </p>
 ```
 
