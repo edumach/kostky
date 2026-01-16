@@ -58,8 +58,8 @@ Na **začátek souboru `index.php`** (úplně nahoru) přidej:
 
 ```php
 <?php
-$kostka1 = rand(1, 6);
-$kostka2 = rand(1, 6);
+  $kostka1 = rand(1, 6);
+  $kostka2 = rand(1, 6);
 ?>
 ```
 
@@ -76,7 +76,7 @@ $kostka2 = rand(1, 6);
 
 Najdi v HTML tuto část:
 
-```html
+```php
 <p>
     Na 1. kostce padlo číslo <br> 
     Na 2. kostce padlo číslo
@@ -85,7 +85,7 @@ Najdi v HTML tuto část:
 
 A **doplň PHP výpisy**:
 
-```html
+```php
 <p>
     Na 1. kostce padlo číslo <?php echo $kostka1; ?> <br> 
 
@@ -109,25 +109,25 @@ Obrázky jsou ve složce:
 ~/www/kostky/img/
 ```
 
-a mají názvy např.:
+a mají názvy:
 
 ```
-1.png, 2.png, 3.png, 4.png, 5.png, 6.png
+k_1.png, k_2.png, k_3.png, k_4.png, k_5.png, k_6.png
 ```
 
 Pod předchozí odstavec přidej:
 
-```html
+```php
 <p>
-    <img src="img/<?php echo $kostka1; ?>.png" alt="Kostka 1">
-    <img src="img/<?php echo $kostka2; ?>.png" alt="Kostka 2">
+  <img src="img/<?php echo $kostka1; ?>.png" alt="Kostka 1">
+  <img src="img/<?php echo $kostka2; ?>.png" alt="Kostka 2">
 </p>
 ```
 
 **Vysvětlení:**
 
 * PHP se použije **uvnitř atributu `src`**
-* vznikne např. `img/4.png`
+* vznikne např. `img/k_4.png`
 
 ---
 
@@ -137,9 +137,9 @@ Do PHP části nahoře doplň:
 
 ```php
 <?php
-$kostka1 = rand(1, 6);
-$kostka2 = rand(1, 6);
-$soucet = $kostka1 + $kostka2;
+  $kostka1 = rand(1, 6);
+  $kostka2 = rand(1, 6);
+  $soucet = $kostka1 + $kostka2;
 ?>
 ```
 
@@ -151,16 +151,16 @@ Najdi:
 
 ```html
 <p>
-    Součet bodů je 
+  Součet bodů je 
 </p>
 ```
 
 Uprav na:
 
-```html
+```php
 <p>
-    Součet bodů je
-    <strong><?php echo $soucet; ?></strong>
+  Součet bodů je
+  <strong><?php echo $soucet; ?></strong>
 </p>
 ```
 
