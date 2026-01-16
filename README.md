@@ -120,8 +120,8 @@ Pod předchozí odstavec přidej:
 
 ```php
 <p>
-  echo "<img src='img/k_$cislo1.png'>";
-  echo "<img src='img/k_$cislo1.png'>";
+  echo "<img src='img/k_$kostka1.png'>";
+  echo "<img src='img/k_$kostka1.png'>";
 </p>
 ```
 
