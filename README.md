@@ -1,5 +1,7 @@
 # Kostky (PHP)
-Obsahem cvičení je pomocí klonování repozitáře z GitHubu "stáhnout" kostru programu a dokončit tento jednoduchý web na serveru TuX: [https://php.edumach.cz/kostky.php](https://php.edumach.cz/kostky.php).
+Obsahem cvičení je pomocí klonování repozitáře z GitHubu "stáhnout" kostru programu a dopsat skript.
+
+Živá ukázka: [https://php.edumach.cz/kostky.php](https://php.edumach.cz/kostky.php).
 
 ## Příprava
 
