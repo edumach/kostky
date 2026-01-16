@@ -120,14 +120,13 @@ Pod předchozí odstavec přidej:
 
 ```php
 <p>
-  <img src="img/k_" . <?php echo $kostka1; ?> . ".png" alt="Kostka 1">
-  <img src="img/k_" . <?php echo $kostka2; ?> . ".png" alt="Kostka 2">
+  echo "<img src='img/k_$cislo1.png'>";
+  echo "<img src='img/k_$cislo1.png'>";
 </p>
 ```
 
 **Vysvětlení:**
 
-* PHP se použije **uvnitř atributu `src`**
 * vznikne např. `img/k_4.png`
 
 ---
