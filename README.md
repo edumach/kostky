@@ -26,8 +26,6 @@ Obsahem cvičení je pomocí klonování repozitáře z GitHubu "stáhnout" kost
 
 # Další postup
 
-## Cíl cvičení
-
 Po načtení stránky se:
 
 * **náhodně vygenerují dvě čísla 1–6**,
@@ -65,7 +63,8 @@ $kostka2 = rand(1, 6);
 ?>
 ```
 
-### Vysvětlení
+**Vysvětlení:**
+
 
 * `rand(1, 6)` → náhodné číslo od 1 do 6
 * `$kostka1`, `$kostka2` → proměnné
@@ -94,7 +93,7 @@ A **doplň PHP výpisy**:
 </p>
 ```
 
-### Vysvětlení
+**Vysvětlení:**
 
 * `echo` → vypíše hodnotu do HTML
 * PHP se **přepíná do HTML a zpět**
@@ -125,12 +124,10 @@ Pod předchozí odstavec přidej:
 </p>
 ```
 
-### Co je důležité
+**Vysvětlení:**
 
 * PHP se použije **uvnitř atributu `src`**
-* vznikne např.:
-  `img/4.png`
-* **žádný JavaScript**, vše řeší PHP
+* vznikne např. `img/4.png`
 
 ---
 
@@ -188,14 +185,6 @@ Uprav na:
 
 # Rozšíření 1
 
-Tohle rozšíření je didakticky ideální 👍 – přirozeně zavádí **podmínku (`if`)** a současně **oddělení logiky (PHP) a vzhledu (CSS)**.
-
-Níže máš **návodný postup**, který plynule navazuje na základní cvičení a je vhodný jako **první setkání s podmínkami v PHP**.
-
----
-
-## Cíl rozšíření
-
 Pokud **padnou stejná čísla** (např. 3 a 3),
 * pod součtem se zobrazí text **DOUBLE**,
 * text bude **červený** (pomocí CSS).
@@ -252,11 +241,10 @@ if ($kostka1 == $kostka2) {
 ?>
 ```
 
-### Co je důležité
+**Vysvětlení:**
 
 * PHP rozhoduje, **zda se HTML vůbec vygeneruje**
 * pokud double **není**, text v HTML **neexistuje**
-* tohle je klíčový rozdíl oproti JavaScriptu
 
 
 ## Shrnutí
