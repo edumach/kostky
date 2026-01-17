@@ -24,7 +24,7 @@ Obsahem cvičení je pomocí klonování repozitáře z GitHubu "stáhnout" kost
    ```
 6. Zkontroluj funkčnost webu na URL `https://tux.panska.cz/~10XPrijmeniJ/kostky`
 
-# Další postup
+## Další postup
 
 Po načtení stránky se:
 
@@ -34,7 +34,7 @@ Po načtení stránky se:
 * tlačítko **„Házet znovu“** načte stránku znovu (nový hod).
 
 
-## (1) Kde se v HTML píše PHP
+### (1) Kde se v HTML píše PHP
 
 PHP kód se zapisuje mezi značky:
 
@@ -52,7 +52,7 @@ Do souboru `index.php` můžeme PHP psát **kdekoliv**, ale nejčastěji:
 * nebo **uvnitř HTML** (výpis hodnot).
 
 
-## (2) Vygenerování náhodných hodů kostkami
+### (2) Vygenerování náhodných hodů kostkami
 
 Na **začátek souboru `index.php`** (úplně nahoru) přidej:
 
@@ -72,7 +72,7 @@ Na **začátek souboru `index.php`** (úplně nahoru) přidej:
 
 
 
-## (3) Vypsání hozených čísel do stránky
+### (3) Vypsání hozených čísel do stránky
 
 Najdi v HTML tuto část:
 
@@ -102,7 +102,7 @@ A **doplň PHP výpisy**:
 
 
 
-## (4) Zobrazení obrázků kostek
+### (4) Zobrazení obrázků kostek
 
 Obrázky jsou ve složce:
 
@@ -130,9 +130,8 @@ Pod předchozí odstavec přidej:
 * v proměnné `$kostka1` je uložené pouze číslo
 * vznikne např. `<img src='img/k_4.gif'>`
 
----
 
-## (5) Výpočet součtu
+### (5) Výpočet součtu
 
 Do PHP části nahoře doplň:
 
@@ -144,9 +143,7 @@ Do PHP části nahoře doplň:
 ?>
 ```
 
----
-
-## (6) Výpis součtu do stránky
+### (6) Výpis součtu do stránky
 
 Najdi:
 
@@ -165,33 +162,28 @@ Uprav na:
 </p>
 ```
 
----
 
-# Shrnutí
+### Shrnutí
 
-* PHP:
-
-  * **vygeneruje čísla**
-  * **spočítá součet**
-  * PHP **nefunguje bez serveru**, v prohlížeči **nikdy neuvidíš PHP kód**.
-
-* HTML:
-
-  * **zobrazí text**
-  * **zobrazí obrázky**
-* Tlačítko znovu načte stránku → **nový hod**
-
+- PHP:
+  - **vygeneruje čísla**
+  - **spočítá součet**
+  - PHP **nefunguje bez serveru**, v prohlížeči **nikdy neuvidíš PHP kód**.
+- HTML:
+  - **zobrazí text**
+  - **zobrazí obrázky**
+- Tlačítko znovu načte stránku -> **nový hod**
 
 ---
 
-# Rozšíření 1
+## Rozšíření 1 (DOUBLE)
 
 Pokud **padnou stejná čísla** (např. 3 a 3),
 * pod součtem se zobrazí text **DOUBLE**,
 * text bude **červený** (pomocí CSS).
 
 
-## (1) Zjištění, zda padla stejná čísla
+### (1) Zjištění, zda padla stejná čísla
 
 Do **PHP části nahoře** přidej novou proměnnou:
 
@@ -209,14 +201,14 @@ if ($kostka1 == $kostka2) {
 ?>
 ```
 
-### Vysvětlení
+**Vysvětlení:**
 
 * `==` znamená **porovnání** (ne přiřazení!)
 * `if (podmínka)` → když je splněna, provede se blok
 * `$double` je **logická hodnota** (`true / false`)
 
 
-## (2) Přidání CSS stylu
+### (2) Přidání CSS stylu
 
 Do části `<head>` přidej jednoduchý styl:
 
@@ -230,7 +222,7 @@ Do části `<head>` přidej jednoduchý styl:
 ```
 
 
-## (3) Podmíněné zobrazení textu DOUBLE
+### (3) Podmíněné zobrazení textu DOUBLE
 
 Pod odstavec se součtem přidej:
 
@@ -248,22 +240,24 @@ if ($kostka1 == $kostka2) {
 * pokud double **není**, text v HTML **neexistuje**
 
 
-## Shrnutí
+### Shrnutí
 
 1. PHP:
-
-   * vygeneruje hody
-   * spočítá součet
-   * porovná čísla
+   - vygeneruje hody
+   - spočítá součet
+   - porovná čísla
 2. HTML:
-
-   * zobrazí text a obrázky
+   - zobrazí text a obrázky
 3. CSS:
-
-   * určí, **jak má DOUBLE vypadat**
+   - určí, jak má DOUBLE vypadat
 
 ---
 
-# Rozšíření 2
+## Rozšíření 2 (VELKÝ HOD)
 
-**VELKÝ HOD** – pokud je součet ≥ 10, vypíše se **🎲 DOUBLE 🎲**
+- Pokud je součet 10 a víc, vypíše se zeleně text "VELKÝ HOD".
+- Technicky jde o přidání vhodné podmínky a CSS stylu.
+
+## Odevzdání
+
+Funkční aplikace na URL `https://tux.panska.cz/~10XPrijmeniJ/kostky` včetně **obou** rozšíření.   
