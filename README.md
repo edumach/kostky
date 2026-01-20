@@ -1,7 +1,7 @@
 # Kostky (PHP)
 Obsahem cvičení je pomocí klonování repozitáře z GitHubu "stáhnout" kostru programu a dopsat skript.
 
-Živá ukázka: [https://php.edumach.cz/kostky.php](https://php.edumach.cz/kostky.php).
+Živá ukázka: <a href="https://php.edumach.cz/kostky.php" target="_blank">https://php.edumach.cz/kostky.php</a>.
 
 ## Příprava
 
@@ -13,7 +13,7 @@ Obsahem cvičení je pomocí klonování repozitáře z GitHubu "stáhnout" kost
    ``` 
 3. Přesuň se do adresáře `~/www` a naklonuj repozitář `https://github.com/edumach/kostky`:
    ```
-   $ cd ~/www
+   $ cd www
    $ git clone https://github.com/edumach/kostky
    ``` 
 4. Tím vznikne adresář `~/www/kostky/`
