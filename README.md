@@ -120,8 +120,10 @@ Pod předchozí odstavec přidej:
 
 ```php
 <p>
-  echo "<img src='img/k_$kostka1.gif'>";
-  echo "<img src='img/k_$kostka1.gif'>";
+  <?php
+    echo "<img src='img/k_$kostka1.gif'>";
+    echo "<img src='img/k_$kostka1.gif'>";
+  ?>
 </p>
 ```
 
@@ -183,46 +185,7 @@ Pokud **padnou stejná čísla** (např. 3 a 3),
 * text bude **červený** (pomocí CSS).
 
 
-### (1) Zjištění, zda padla stejná čísla
-
-Do **PHP části nahoře** přidej novou proměnnou:
-
-```php
-<?php
-$kostka1 = rand(1, 6);
-$kostka2 = rand(1, 6);
-$soucet  = $kostka1 + $kostka2;
-
-$double = false;
-
-if ($kostka1 == $kostka2) {
-    $double = true;
-}
-?>
-```
-
-**Vysvětlení:**
-
-* `==` znamená **porovnání** (ne přiřazení!)
-* `if (podmínka)` → když je splněna, provede se blok
-* `$double` je **logická hodnota** (`true / false`)
-
-
-### (2) Přidání CSS stylu
-
-Do části `<head>` přidej jednoduchý styl:
-
-```html
-<style>
-    .double {
-        color: red;
-        font-weight: bold;
-    }
-</style>
-```
-
-
-### (3) Podmíněné zobrazení textu DOUBLE
+### (A) Podmíněné zobrazení textu DOUBLE
 
 Pod odstavec se součtem přidej:
 
@@ -238,6 +201,20 @@ if ($kostka1 == $kostka2) {
 
 * PHP rozhoduje, **zda se HTML vůbec vygeneruje**
 * pokud double **není**, text v HTML **neexistuje**
+
+
+### (B) Přidání CSS stylu
+
+Do části `<head>` přidej jednoduchý styl:
+
+```html
+<style>
+.double {
+  color: red;
+  font-weight: bold;
+}
+</style>
+```
 
 
 ### Shrnutí
