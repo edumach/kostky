@@ -122,7 +122,7 @@ Pod předchozí odstavec přidej:
 <p>
   <?php
     echo "<img src='img/k_$c1.gif'>";
-    echo "<img src='img/k_$c1.gif'>";
+    echo "<img src='img/k_$c2.gif'>";
   ?>
 </p>
 ```
