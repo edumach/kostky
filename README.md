@@ -58,8 +58,8 @@ Na **začátek souboru `index.php`** (úplně nahoru) přidej:
 
 ```php
 <?php
-  $kostka1 = rand(1, 6);
-  $kostka2 = rand(1, 6);
+  $c1 = rand(1, 6);
+  $c2 = rand(1, 6);
 ?>
 ```
 
@@ -67,7 +67,7 @@ Na **začátek souboru `index.php`** (úplně nahoru) přidej:
 
 
 * `rand(1, 6)` → náhodné číslo od 1 do 6
-* `$kostka1`, `$kostka2` → proměnné
+* `$c1`, `$c2` → proměnné
 * `$` **patří k názvu proměnné**
 
 
@@ -88,9 +88,9 @@ A **doplň PHP výpisy**:
 
 ```php
 <p>
-  Na 1. kostce padlo číslo <?php echo $kostka1; ?>
+  Na 1. kostce padlo číslo <?php echo $c1; ?>
   <br>
-  Na 2. kostce padlo číslo <?php echo $kostka2; ?>
+  Na 2. kostce padlo číslo <?php echo $c2; ?>
 </p>
 ```
 
@@ -121,15 +121,15 @@ Pod předchozí odstavec přidej:
 ```php
 <p>
   <?php
-    echo "<img src='img/k_$kostka1.gif'>";
-    echo "<img src='img/k_$kostka1.gif'>";
+    echo "<img src='img/k_$c1.gif'>";
+    echo "<img src='img/k_$c1.gif'>";
   ?>
 </p>
 ```
 
 **Vysvětlení:**
 
-* v proměnné `$kostka1` je uložené pouze číslo
+* v proměnné `$c1` je uložené pouze číslo
 * vznikne např. `<img src='img/k_4.gif'>`
 
 
@@ -139,9 +139,9 @@ Do PHP části nahoře doplň:
 
 ```php
 <?php
-  $kostka1 = rand(1, 6);
-  $kostka2 = rand(1, 6);
-  $soucet = $kostka1 + $kostka2;
+  $c1 = rand(1, 6);
+  $c2 = rand(1, 6);
+  $soucet = $c1 + $c2;
 ?>
 ```
 
@@ -191,7 +191,7 @@ Pod odstavec se součtem přidej:
 
 ```php
 <?php
-if ($kostka1 == $kostka2) {
+if ($c1 == $c2) {
     echo '<p class="double">DOUBLE</p>';
 }
 ?>
